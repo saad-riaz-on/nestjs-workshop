@@ -137,7 +137,11 @@ export default function NestJSWorkshopDashboard() {
   useEffect(() => {
     const fetchParticipants = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/participants`);
+        const response = await fetch(`${API_BASE_URL}/participants`, {
+          headers: {
+            'ngrok-skip-browser-warning': 'true'
+          }
+        });
         if (!response.ok) throw new Error("Failed to fetch participants");
 
         const data = await response.json();
