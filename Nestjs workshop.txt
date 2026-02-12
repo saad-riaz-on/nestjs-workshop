@@ -1,0 +1,1899 @@
+🏛️  NestQuest: The Temple of Modules
+Playing with Nestjs
+
+														               Muhammad Saad Riaz
+
+🧭 Workshop Overview
+Transform engineers into confident NestJS developers through a fun, story-driven adventure.
+
+Format:
+🕒 3 Days →
+Day 1: Core Foundations
+Day 2: Persistence + GraphQL
+Day 3: Real-Time + Microservices + Finale
+
+Style:
+🎮 Gamified learning → Each concept = a Temple Chamber you unlock via coding quests.
+
+
+🔮Why NestJS?
+NestJS is:
+
+A progressive Node.js framework built with TypeScript using expressJs (under the hood - can use fastify as well)
+Inspired by Angular’s architecture (modular, dependency-injected, testable)
+Perfect for building scalable server-side applications
+
+
+Why it’s great for engineers coming from (Ruby/Java/Kotlin):
+✅ Familiar MVC feel
+✅ Clear conventions & decorators
+✅ Built-in DI, modules, and testing
+✅ Clean migration path from monolith → microservices
+
+
+⚙️ Core NestJS Concepts We’ll Master
+🏛️ Modules — Organize your app into feature boundaries
+⚔️ Controllers — Handle incoming HTTP requests
+💡 Providers & Dependency Injection — Core business logic and shared services
+🧩 Request-Scoped Providers — Create per-request instances for logging or tracing
+🧬 Lifecycle Hooks — Control initialization and graceful shutdown of services
+🌊 Pipes & Filters — Validation & error handling
+🌍 Global Filters — Centralized, app-wide exception handling
+⚙️ Middleware — Pre-route logic for logging, auth, and transformations
+🛡️ Guards & Interceptors — Authorization, access control, and response manipulation
+🧱 Persistence (TypeORM / MikroORM) — Database integration and ORM design
+
+⚙️ Core NestJS Concepts We’ll Master
+💾 Caching — Improve performance and reduce redundant queries
+📂 File Uploads — Handle image, document, and multipart form uploads
+🔮 GraphQL — Flexible data fetching and schema-driven APIs
+🔐 Auth + JWT — Secure APIs and manage user sessions
+📡 WebSockets — Real-time updates and event broadcasting
+⚙️ Microservices — Async communication between distributed services
+🧠 Event Emitters — In-app asynchronous event handling
+🧪 Testing — Unit and E2E testing with Jest and Nest’s testing utilities
+👁️ Observability — Health checks, metrics, and structured logging
+📜 Config Service — Centralized configuration and environment management
+
+
+⚙️ Core NestJS Concepts We’ll Master
+🏯 Chamber
+Concept
+Description
+🏛️ 1. Modules
+Organize your app into feature boundaries
+Group controllers, services, and providers logically.
+⚔️ 2. Controllers
+Handle incoming HTTP requests
+Define routes and map them to service logic.
+💡 3. Providers & DI
+Core business logic and shared services
+Injectable classes managed by Nest’s DI container.
+🧩 4. Request-Scoped Providers
+Per-request instances
+Create unique service instances per request for logs or tracing.
+🧬 5. Lifecycle Hooks
+Initialization & shutdown control
+Run setup or teardown logic via hooks like OnModuleInit.
+🌊 6. Pipes & Filters
+Validation & error handling
+Transform input, validate data, and catch exceptions.
+🌍 7. Global Filters
+App-wide exception handling
+Centralize error handling with global filters using APP_FILTER.
+⚙️ 8. Middleware
+Pre-route logic
+Execute logic before requests reach controllers (logging, parsing, auth checks).
+🛡️ 9. Guards & Interceptors
+Auth & response manipulation
+Control access (CanActivate) and modify responses (NestInterceptor).
+🧱 10. Persistence (TypeORM / MikroORM)
+Database integration
+Manage entities, relations, and migrations.
+
+⚙️ Core NestJS Concepts We’ll Master
+🏯 Chamber
+Concept
+Description
+💾 11. Caching
+Performance optimization
+Cache responses or computed data with in-memory or Redis backends.
+📂 12. File Uploads
+Handle file and image uploads
+Use Multer-based interceptors for single or multiple file uploads.
+🔮 13. GraphQL
+Flexible, typed data fetching
+Build schema-driven APIs with resolvers, queries, and mutations.
+🔐 14. Auth + JWT
+Secure APIs
+Protect routes using JWT, Guards, and Passport strategies.
+📡 15. WebSockets
+Real-time updates
+Communicate bi-directionally using @WebSocketGateway().
+⚙️ 16. Microservices
+Async communication
+Connect distributed services via message patterns (TCP, Redis, RabbiqMQ).
+🧠 17. Event Emitters
+In-app asynchronous events
+Emit and listen to domain events within the app without tight coupling.
+🧪 18. Testing
+Unit & E2E tests
+Validate logic and endpoints using Jest and Nest’s TestingModule utilities.
+👁️ 19. Observability
+Health, metrics, monitoring
+Add /healthz, metrics, and structured logs for visibility.
+📜 20. Config Service
+Centralized configuration
+Manage .env files, environment variables, and validate them with Joi.
+
+🧑‍💻 Workshop Structure
+Each concept = a Temple Chamber
+→ unlock with code
+→ earn artifacts
+→ progress on the Temple Map
+Segment
+Format
+Duration
+Mini-lecture
+15 mins
+Concept explanation
+Hand-on quest
+30-45 mins
+Guided coding
+Discussion & review
+10 mins
+Q&A/ reflection
+
+🎮 The Game: NestQuest
+You are adventurers entering the Temple of Modules — each coding practice unlocks a new chamber.
+
+How it works:
+Each participant has a Temple Map Dashboard
+After completing a quest, your chamber lights up 🔆
+Earn emoji artifacts like ⚔️ 🛡️ 🔮 💡
+Work together to fully illuminate the temple
+
+Final Goal:
+Build a fully working NestJS API + GraphQL + Realtime app — the “Golden Module” ✨
+
+
+
+🤝 Collaboration Rules
+No competition — only collective success 🏆
+Everyone must complete each core concept hands-on
+Ask questions anytime — this is an exploration, not an exam
+Pair up during “Portal Challenges” to debug and learn together
+Celebrate each chamber unlock with your guildmates 🎉
+
+💻 What You’ll Build
+By the end of the workshop, you’ll have:
+✅ A fully working mvp of NestJS backend
+✅ REST + GraphQL endpoints
+✅ Auth, Validation, and DI mastered
+✅ Real-time WebSocket feed
+✅ Dockerized and ready to deploy
+
+Your code will literally power the Golden Module — the Temple’s final awakening.
+
+
+🧰 What You Need
+Pre-Requisites:
+Node.js ≥ 20
+pnpm or npm
+Docker Desktop
+Git + VSCode
+Postman
+
+Accounts:
+Local terminal access (for CLI submissions)
+
+
+⚔️ Rules of the Temple
+DO:
+✅ Write clean, modular code
+✅ Commit often
+✅ Help your peers
+✅ Explore beyond examples
+
+DON’T:
+🚫 Copy-paste without understanding
+🚫 Skip hands-on — each unlock matters
+
+Temple Secret:
+Every challenge reveals an Easter egg 😉 — watch your logs.
+
+
+🗺️ Daily Flow
+🕐 Day 1:
+NestJS Fundamentals → REST Skeleton
+Modules, Controllers, Providers, Pipes
+
+🕑 Day 2:
+Persistence (TypeORM vs MikroORM)
+GraphQL + DataLoader
+Auth (JWT)
+
+🕒 Day 3:
+WebSockets + Microservices
+Observability + Docker
+Golden Module Celebration 🎇
+
+
+🏁 Endgame: The Golden Module
+When every participant completes all 12 Chambers:
+🌟 The temple glows
+📡 Real-time confetti broadcast
+📜 Everyone’s name engraved in the Hall of Builders
+
+“You are now a Guardian of the Temple of Modules.” 🏛️
+
+
+🧠 Learning Outcomes
+After 3 days, ( hopefully 🤞) you’ll confidently:
+Able to design scalable NestJS applications
+Integrate databases using ORMs
+Build APIs (REST + GraphQL)
+Implement JWT Auth + Middleware + Guards + Interceptors
+Handle real-time WebSockets
+Structure production-ready code
+
+Meanwhile: You’ll understand Node DI, metadata, decorators, and modular design — skills that go beyond NestJS itself. 
+
+
+Day 1
+
+📅 Agenda
+ 
+Time
+Module
+Concept
+Format
+9:30 – 10:30
+Opening & Setup & refresher TS
+Environment + Repo Clone
+Guided
+10:30 – 11:15
+Chamber 1
+🏛️ Modules
+Lecture + Hands-on
+11:15 – 12:00
+Chamber 2
+⚔️ Controllers
+Lecture + Hands-on
+12:00 – 13:30
+—
+Lunch Break
+🍱
+13:30 – 14:30
+Chamber 3
+💡 Providers & DI
+Lecture + Hands-on
+14:30 – 16:00
+Chamber 4
+🌊 Pipes & Filters
+Lecture + Hands-on
+16:00 – 16:30
+—
+Recap & Temple Checkpoint 1
+Discussion
+
+👋 Let’s Begin the Journey
+
+
+
+“Every temple starts with one gate — the Module.”
+
+
+
+Next Stop: Modules 🏛️
+Light your lanterns — let’s begin the quest 🔥
+
+🧭 Entering the Temple
+Theme:
+🏛️ Foundations of the Temple — Core NestJS Concepts
+
+Focus Areas:
+Modules
+Controllers
+Providers & Dependency Injection
+Pipes & Filters
+
+End of Day Goal:
+A working REST API with clean architecture, validation, and error handling.
+
+
+🧭 Section 1: Why TypeScript for NestJS
+	•	JS is dynamic → TypeScript adds types, tooling, safety.
+	•	NestJS is built entirely with TypeScript ( can be used with JS as well ).
+	Benefits:
+	•	Early bug detection
+	•	IntelliSense & auto-completion
+	•	Predictable APIs between backend modules
+
+
+
+🧩 Section 2: Core TypeScript Building Blocks
+“Type Annotations and Inference”
+	•	Explicit vs inferred types.
+	•	Avoid any unless absolutely necessary.
+
+
+🧩 Section 2: Core TypeScript Building Blocks
+“Primitive and Special Types”
+	•	number, string, boolean, null, undefined, symbol, bigint
+	•	Special: any, unknown, never, void
+
+
+🧩 Section 2: Core TypeScript Building Blocks
+“Objects and Interfaces”
+	•	Interfaces define shape of objects.
+	•	Optional & readonly properties.
+
+
+
+🧩 Section 2: Core TypeScript Building Blocks
+“Type Aliases vs Interfaces”
+	•	Both define object shapes.
+	•	type is more flexible (unions, primitives, etc.).
+
+
+
+
+🧩 Section 2: Core TypeScript Building Blocks
+“Arrays and Tuples”
+
+🧩 Section 2: Core TypeScript Building Blocks
+“Enums”
+
+⚙️ Section 3: Advanced Type Features
+“Union and Intersection Types”
+
+⚙️ Section 3: Advanced Type Features
+“Literal and Template Literal Types”
+
+⚙️ Section 3: Advanced Type Features
+“Generics: Reusable Type Logic”
+
+⚙️ Section 3: Advanced Type Features
+“Utility Types”
+
+Common built-ins:
+	•	Partial<T> — makes properties optional
+	•	Pick<T, K> — selects subset
+	•	Omit<T, K> — removes keys
+	•	Readonly<T> — immutable
+
+
+⚙️ Section 3: Advanced Type Features
+“Type Narrowing & Type Guards”
+
+
+⚙️ Section 3: Advanced Type Features
+“Classes and Access Modifiers”“Classes and Access Modifiers”
+
+⚙️ Section 3: Advanced Type Features
+“Abstract Classes and Interfaces”
+	•	abstract = base implementation + blueprint
+	•	interface = contract only
+
+
+⚙️ Section 3: Advanced Type Features
+“Decorators (Preview)”
+	•	Metadata added to classes, methods, or parameters.
+	•	Used heavily in NestJS (@Controller, @Injectable, etc.).
+
+
+🚀 Section 4: Practical Integration with NestJS
+“DTOs and Validation with Types”
+
+🚀 Section 4: Practical Integration with NestJS
+ “Type Inference with Repositories”
+
+🚀 Section 4: Practical Integration with NestJS
+ “Response Types and API Contracts”
+
+🧠 Section 5: TypeScript in Practice
+“Common Errors and Fixes”
+	•	“Object is possibly ‘undefined’” → use optional chaining ?.
+	•	“Type ‘X’ is not assignable to type ‘Y’” → ensure proper generics or casting
+	•	“Cannot find name ‘Reflect’” → enable "experimentalDecorators" + "emitDecoratorMetadata"
+
+
+🧠 Section 5: TypeScript in Practice
+“Final Summary”
+
+🏛️ Modules
+Purpose:
+Organize your app into feature boundaries. 
+
+Think of a Module as:
+🧱 The room in your temple — each room contains its own logic, guards, and tools.
+
+Key Topics:
+@Module( ) anatomy (imports / controllers / providers / exports)
+Provider visibility & exports
+Dynamic Modules (forRoot, forFeature) “Dynamic modules are the factories of NestJS — they let you create configurable, reusable building blocks.”
+Global Modules @Global( )
+
+Analogy:
+“Modules are like self-contained chambers — each knows its purpose and who’s allowed inside.”
+
+
+
+🏛️ Modules
+// guilds.module.ts
+import { Module } from '@nestjs/common';
+import { GuildsController } from './guilds.controller';
+import { GuildsService } from './guilds.service';
+
+@Module({
+  controllers: [GuildsController],
+  providers: [GuildsService],
+  exports: [GuildsService], // share with other modules
+})
+export class GuildsModule {}
+
+
+Hands-on Quest:
+Build GuildsModule + QuestsModule, wire them into AppModule with empty arrays for controllers, providers and exports.
+
+
+
+
+
+⚔️ Controllers
+Purpose:
+Handle incoming requests
+
+Key Topics:
+	@Controller() and routing decorators
+	Parameter decorators: @Param, @Body, @Query
+	Returning JSON & exceptions
+	Delegating to Services
+
+
+
+⚔️ Controllers
+// guilds.controller.ts
+import { Controller, Get, Post, Param, Body } from '@nestjs/common';
+import { GuildsService } from './guilds.service';
+
+@Controller('guilds')
+export class GuildsController {
+  constructor(private readonly service: GuildsService) {}
+
+  @Get() list() {
+    return this.service.list();
+  }
+
+  @Get(':id') byId(@Param('id') id: string) {
+    return this.service.byId(id);
+  }
+
+  @Post() create(@Body() dto: { name: string }) {
+    return this.service.create(dto.name);
+  }
+}
+
+
+
+💡 Providers & Dependency Injection
+Purpose:
+Power business logic through reusable, injectable services.
+
+Key Topics:
+	What is a provider?
+	@Injectable() and the DI container
+	Provider scopes (singleton, request, transient)
+	Custom providers (useClass, useValue, useFactory, useExisting)
+	Circular deps & forwardRef
+
+Hands-on Quest:
+Inject LoggerService and DateService into existing modules.
+Add a factory provider (UUID_PREFIX) and log its injection.
+
+
+💡 Providers & Dependency Injection
+1. Standard Providers
+This is the most common type. Nest manages the instantiation of the class for you.
+
+@Injectable()
+export class CatsService {
+ findAll() {
+   return ['British Shorthair', 'Maine Coon'];
+ }
+}
+
+// Registration in Module
+providers: [CatsService]
+
+
+
+💡 Providers & Dependency Injection
+
+
+// Value                                  // Value
+providers: [{                             constructor(
+ provide: 'CONFIG',                        @Inject('CONFIG') private config: any
+ useValue: { port: 3000 }                ) {}
+}]
+
+
+
+
+
+💡 Providers & Dependency Injection
+// Class                                  // Class (Identical to Standard)
+providers: [{                             constructor(private logger: Logger) {}
+ provide: Logger,
+ useClass: CloudLogger
+}]
+
+// Factory                                // Factory
+providers: [{                             constructor(
+ provide: 'CONNECTION',                    @Inject('CONNECTION') private conn: any
+ useFactory: (cfg: Config) => {          ) {}
+   return cfg.connect();
+ },
+ inject: [Config]
+}]
+
+
+💡 Providers & Dependency Injection
+Hands-on Quest:
+Create GET /guilds, POST /guilds, GET /guilds/:id.
+Auto-serialize responses and throw a NotFoundException when missing.
+
+
+🧩 Request-Scoped Providers
+Purpose:
+Create unique provider instances per incoming request — useful for tracking request IDs, user context, or tenant data.
+
+Key Concept:
+Default providers in NestJS are singletons (shared across all requests).
+You can mark a provider as request-scoped, so it’s recreated for each request.
+
+@Injectable({ scope: Scope.REQUEST })
+export class RequestLoggerService {
+  constructor(@Inject(REQUEST) private request: Request) {}
+
+  log(msg: string) {
+    console.log(`[${this.request.url}] ${msg}`);
+  }
+}
+“Each visitor gets their own personal scribe — writing only their story.”
+
+🧬 Lifecycle Hooks
+Purpose:
+Understand how NestJS components (Modules, Controllers, Providers) go through creation → initialization → destruction phases.
+
+
+
+Hook
+Trigger
+Typical Use
+OnModuleInit
+When the module’s dependencies are resolved
+Warm-up caches, log startup
+OnApplicationBootstrap
+When all modules initialized
+Startup tasks (seed data, connect services)
+OnModuleDestroy
+Before module destroyed
+Cleanup (close DB)
+OnApplicationShutdown
+App shutdown signal received
+Graceful shutdown
+
+💻 Lifecycle Hooks
+Task:
+Add OnModuleInit to GuildsService and log initialization.
+Add OnApplicationBootstrap to AppModule and print a startup message.
+Run npm run start:dev and watch the console.
+Stop the server and observe shutdown logs.
+
+Temple Unlock:
+🧬 Pulse of the Temple awakened — your services now live and breathe.
+
+
+💻 Lifecycle Hooks
+// any.service.ts
+import { Injectable, OnModuleInit, OnApplicationShutdown } from '@nestjs/common';
+
+@Injectable()
+export class AnyService implements OnModuleInit, OnApplicationShutdown {
+  onModuleInit() { console.log('AnyService ready ✅'); }
+  onApplicationShutdown(signal?: string) { console.log('Shutting down:', signal); }
+}
+
+
+🌊 Pipes & Filters
+Purpose:
+Transform & validate incoming data; handle errors gracefully.
+
+Key Topics:
+Built-in pipes: ValidationPipe, ParseIntPipe, ParseUUIDPipe
+Creating custom pipes
+Exception filters (@Catch, ArgumentsHost)
+Built-in exceptions (BadRequestException, NotFoundException)
+Global pipes & filters setup
+
+
+🌊 Pipes & Filters
+// dto & validation pipe usage
+import { IsString, Length } from 'class-validator';
+export class CreateGuildDto {
+    @IsString() @Length(3, 30) name!: string;
+}
+
+// global in main.ts
+app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
+
+// custom filter
+@Catch(HttpException)
+export class HttpFilter implements ExceptionFilter {
+  catch(e: HttpException, host: ArgumentsHost) {
+    const res = host.switchToHttp().getResponse();
+    res.status(e.getStatus()).json({ message: e.message });
+  }
+}
+
+
+
+@PipeTransform()
+export class ParseIntPipe implements PipeTransform {
+  transform(value: string) {
+    const val = parseInt(value, 10);
+    
+    if (isNaN(val)) 
+        throw new BadRequestException('Not a number');
+    
+     return val;
+  }
+}
+
+
+🌊 Pipes & Filters
+Hands-on Quest:
+Add DTO validation using class-validator.
+Create custom pipe (UppercaseNamePipe) & exception filter for 404 handling.
+
+
+🌍 Global Filters
+Purpose:
+Apply exception handling across the entire app — no need to repeat @UseFilters() everywhere.
+
+Concepts:
+Register filters globally with the APP_FILTER token.
+Handle exceptions in one central place.
+
+@Catch(HttpException)
+export class GlobalExceptionFilter implements ExceptionFilter {
+  catch(exception: HttpException, host: ArgumentsHost) {
+    const res = host.switchToHttp().getResponse<Response>();
+    const status = exception.getStatus();
+    res.status(status).json({
+      statusCode: status,
+      message: exception.message,
+      temple: 'Module of Light',
+    });
+  }
+}
+
+
+🌍 Global Filters
+Register globally:
+
+@Module({
+  providers: [{ provide: APP_FILTER, useClass: GlobalExceptionFilter }],
+})
+export class AppModule {}
+
+
+“A single guardian stands watch — protecting every chamber from chaos.”
+
+🕰️ Checkpoint
+Temple Status:
+✅ Modules
+✅ Controllers
+✅ Providers & DI
+✅ Pipes & Filters
+
+Today You Learned:
+How NestJS structures apps via modules
+How controllers route HTTP requests
+How providers inject logic dynamically
+How pipes and filters ensure clean input & error handling
+
+
+
+🕰️ Checkpoint
+Artifacts Earned:
+🏛️ Gate of Structure
+⚔️ Controller’s Blade
+💡 Lantern of Dependency
+🌊 Pipe of Purity
+
+“The Temple glows brighter — tomorrow, we build its heart: Data & Persistence.”
+
+
+
+
+Day 2
+
+🧭 The Heart of the Temple
+Theme:
+🧱 Building the Temple’s Foundation — Data, Queries, and Secrets
+
+Focus Areas:
+Persistence (TypeORM vs MikroORM)
+GraphQL
+Authentication (JWT + Guards + Interceptors)
+
+End of Day Goal:
+A fully functional NestJS backend connected to a database, queried via GraphQL, and protected by authentication.
+
+
+📅 Agenda
+ 
+Time
+Module
+Concept
+Format
+9:30 – 10:30
+Recap
+Review Day 1 + Setup DB
+Discussion
+10:30 – 11:00
+Chamber 5
+🧱 Persistence (TypeORM vs MikroORM)
+Lecture + Hands-on
+11:00 – 12:00
+Chamber 6
+🔮 GraphQL
+Lecture + Hands-on
+12:00 – 13:30
+—
+Lunch Break
+🍜
+13:30 – 14:30
+Chamber 7
+🔐 Authentication (JWT) 
+Lecture + Hands-on
+14:00 – 16:00
+Chamber 8
+🛡️ Guards & Interceptors & Middlewares
+Lecture + Hands-on
+16:00 – 16:30
+—
+Recap & Temple Checkpoint 2
+Discussion
+
+🧱 Persistence (TypeORM vs MikroORM)
+Purpose:
+Give the temple a foundation — structured data, models, and repositories.
+
+Key Topics:
+Setting up database connection
+Entities & Repositories
+Migrations
+Relationships (1:N, N:M)
+Lazy vs Eager loading
+Difference between TypeORM & MikroORM
+Lifecycle hooks e.g @BeforeInsert
+
+
+
+🧩 TypeORM vs MikroORM
+ 
+Feature
+TypeORM
+MikroORM
+Style
+Decorator-based (Active Record or Data Mapper)
+Pure Data Mapper
+Config
+Simple, but less explicit
+Explicit & flexible
+Query Builder
+Built-in
+Built-in, lightweight
+Entity Lifecycle
+Auto-managed
+Fully manual control
+Schema Sync
+Auto sync
+Migration-driven
+Decorators
+Heavy usage
+Minimalist
+
+🧱 Persistence (TypeORM vs MikroORM)
+// TypeORM entity
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn } from 'typeorm';
+@Entity() 
+export class Guild {
+  @PrimaryGeneratedColumn('uuid') id!: string;
+  @Column() name!: string;
+  @CreateDateColumn() createdAt!: Date;
+}
+
+
+// MikroORM entity
+import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
+@Entity() 
+export class Guild {
+  @PrimaryKey() id: string = crypto.randomUUID();
+  @Property() name!: string;
+  @Property({ onCreate: () => new Date() }) createdAt!: Date;
+}
+
+
+🧱 Persistence (TypeORM vs MikroORM)
+
+🧱 Persistence (TypeORM vs MikroORM)
+
+💻 Hands-On Quest
+Task:
+Install both ORMs: npm i typeorm mikro-orm 
+Create GuildEntity and QuestEntity with id, name, createdAt and some more attributes of your choice.
+Implement the same entity in both ORMs.
+Add /guilds CRUD using repository pattern.
+
+Stretch Challenge:
+Add QuestEntity with a relation to GuildEntity and query all guilds with their quests.
+
+Temple Unlock:
+🧱 Bricks of Persistence placed.
+
+
+🔮 GraphQL
+Purpose:
+Unleash flexible querying power for the temple.
+
+Key Topics:
+Installing and setting up @nestjs/graphql
+Code-first schema (@ObjectType, @Field, @Resolver)
+Queries vs Mutations
+Nested resolvers & DataLoader
+GraphQL Playground
+Schema generation
+
+
+🧩 GraphQL Architecture
+Flow:
+Request → Resolver
+Resolver calls Service
+Service → DB (ORM)
+Data returned to GraphQL runtime
+Response matches schema types
+
+@Module({
+  imports: [
+    GraphQLModule.forRootAsync({
+      driver: ApolloDriver,
+      inject: [GuildService, QuestService],
+      useFactory: (guilds: GuildService, quests: QuestService) => ({
+        autoSchemaFile: true,
+        context: () => ({
+          loaders: {
+            questsByGuild: createQuestsByGuildLoader(quests),
+          },
+        }),
+      }),
+    }),
+  ],
+  providers: [GuildService, QuestService, QuestResolver, GuildResolver],
+})
+export class AppModule {}
+
+🔮 GraphQL
+
+// loaders/create-quests-by-guild.loader.ts
+import DataLoader from 'dataloader';
+import { QuestService } from '../quest.service';
+import { Quest } from '../quest.entity';
+
+export function createQuestsByGuildLoader(quests: QuestService) {
+  return new DataLoader<number, Quest[]>(async (guildIds) => {
+    const rows = await quests.findManyByGuildIds(guildIds);
+    // Bucket quests by guildId
+    const buckets = new Map<number, Quest[]>();
+
+    for (const id of guildIds) 
+       buckets.set(id, []);
+
+    for (const q of rows) 
+       buckets.get(q.guildId)!.push(q);
+
+    return guildIds.map(id => buckets.get(id)!); // array per guildId, in order
+  });
+}
+
+🔮 GraphQL
+
+// gql.module.ts
+GraphQLModule.forRoot({ autoSchemaFile: true });
+
+// types & resolver
+@ObjectType() 
+class Guild { 
+   @Field() 
+    id!: string; 
+   
+    @Field() 
+    name!: string; 
+    
+    @Field(() => [Quest]) 
+    quests: [Quest]; 
+}
+🔮 GraphQL
+@Resolver(() => Guild)
+export class GuildResolver {
+    constructor(private svc: GuildsService) {}
+
+    @Query(() => [Guild])
+     guilds() {
+        return this.svc.list();
+     }
+
+     @Mutation(() => Guild)
+     createGuild(@Args('name') name: string) {
+         return this.svc.create(name);
+      }
+
+    @ResolveField(() => [Quest])
+    quests(@Parent() guild: Guild, @Context() ctx: any) {
+        // ✅ Batch quests for multiple guilds in one go
+        return ctx.loaders.questsByGuild.load(guild.id);
+    }
+}
+
+
+🔮 GraphQL DataLoader
+Purpose:
+Solve the N + 1 problem in GraphQL by batching and caching related queries.
+
+Problem:
+Without DataLoader, your resolver might trigger dozens of DB calls —
+e.g., fetching quests for each guild separately.
+
+Solution:
+DataLoader groups similar requests into one efficient query.
+
+
+⚙️ How Data Loader Works
+Flow:
+Multiple resolvers ask for related data (e.g., Guild → Quests).
+DataLoader collects all IDs requested within the same tick.
+It calls a single batch function (e.g., findManyByGuildIds).
+Results are cached and returned in the same order.
+
+Analogy:
+“Instead of asking the librarian for one book at a time, you hand her a list — she brings them all at once.” 📚
+
+
+🔮 GraphQL DataLoader
+// quests.loader.ts
+import  DataLoader from 'dataloader';
+import { Injectable } from '@nestjs/common';
+import { QuestsService } from './quests.service';
+
+@Injectable()
+export class QuestsLoader {
+  constructor(private readonly quests: QuestsService) {}
+
+  readonly loader = new DataLoader<string, Quest[]>(async (guildIds) => {
+    const quests = await this.quests.findByGuildIds(guildIds);
+    const map = groupBy(quests, 'guildId');
+    return guildIds.map((id) => map[id] || []);
+  });
+}
+
+
+
+
+🔮 GraphQL DataLoader
+// graphql.module.ts
+GraphQLModule.forRoot({
+  autoSchemaFile: true,
+  context: () => ({
+    loaders: {
+      quests: new QuestsLoader(),
+    },
+  }),
+});
+
+// guild.resolver.ts
+@Resolver(() => Guild)
+export class GuildResolver {
+  @ResolveField(() => [Quest])
+  quests(@Parent() guild: Guild, @Context() ctx) {
+    return ctx.loaders.quests.loader.load(guild.id);
+  }
+}
+
+
+💻 Hands-On Quest
+Task:
+Add @nestjs/graphql, graphql, apollo-server-express.
+Create Guild and Quest object types.
+Add resolvers for queries and mutations for Guild and Quest entities
+Implement DataLoader to avoid N+1 queries to get the quests for a guild.
+Test in GraphQL Playground.
+
+Temple Unlock:
+🔮 Orb of Queries activated — data flows through light.
+
+
+💾 Caching in NestJS
+Purpose:
+Reduce redundant queries and boost performance by caching responses in memory or Redis. Install with npm i @nestjs/cache-manager cache-manager
+To register in module:
+CacheModule.register({ ttl: 10 }); // 10 seconds
+
+💾 Caching in NestJS
+// app.service.ts
+import { Injectable, Inject, CACHE_MANAGER } from '@nestjs/common';
+import { Cache } from 'cache-manager';
+
+@Injectable()
+export class AppService {
+  constructor(@Inject(CACHE_MANAGER) private cache: Cache) {}
+
+  async getUserData(id: number) {
+    const key = `user_${id}`;
+
+    // 1️⃣ Try from cache first
+    let user = await this.cache.get(key);
+    if (user) {
+      console.log('✅ Returned from cache');
+      return user;
+    }
+
+    
+
+    // 2️⃣ Otherwise fetch from “DB” or API
+    console.log('⚙️ Fetching from DB...');
+    user = { id, name: 'Ada Lovelace', role: 'Engineer' };
+
+    // 3️⃣ Store in cache for 15 seconds
+    await this.cache.set(key, user, 15_000);
+
+    return user;
+  }
+}
+
+
+💾 Caching in NestJS
+Example
+import { CacheInterceptor, CacheKey, CacheTTL, UseInterceptors } from '@nestjs/common';
+
+@Controller('guilds')
+@UseInterceptors(CacheInterceptor)
+export class GuildsController {
+  @CacheKey('all_guilds')
+  @CacheTTL(30)
+  @Get()
+  findAll() {
+    return [{ id: 1, name: 'Dev Rangers' }];
+  }
+
+}
+
+
+⚙️ Hands-On Quest: Caching
+Task:
+Enable CacheModule in AppModule.
+Cache responses for /guilds endpoint.
+Log requests — note skipped DB calls on subsequent hits.
+
+Temple Unlock:
+💾 Memory Chamber awakened — the temple now remembers.
+
+
+
+
+📂 File Uploads in NestJS
+Purpose:
+Handle image and document uploads using Multer and interceptors. Install with npm i @nestjs/platform-express multer
+
+import { FileInterceptor } from '@nestjs/platform-express';
+
+@Post('upload')
+@UseInterceptors(FileInterceptor('file'))
+upload(@UploadedFile() file: Express.Multer.File) {
+  console.log(file.originalname);
+  return { message: 'File uploaded', filename: file.filename };
+}
+
+To upload multiple files:
+@UseInterceptors(FilesInterceptor('files'))
+
+
+
+🧠 Hands-On Quest: File Uploads
+Task:
+Add /upload route for single file.
+Test with Postman (form-data).
+Save uploads in /uploads folder.
+Display uploaded file names via /files route.
+
+Temple Unlock:
+📂 Vault of Offerings opened — files accepted by the temple.
+
+
+🔐 Authentication (JWT + Passport)
+Purpose:
+Protect the temple with guards and tokens.
+
+Key Topics:
+Passport module integration
+Local & JWT strategy setup
+Guards with @UseGuards(AuthGuard('jwt'))
+Refresh tokens
+Password hashing (bcrypt)
+
+
+
+
+🔐 Authentication (JWT + Passport)
+@Module({
+  imports: [
+    PassportModule.register({ defaultStrategy: 'jwt' }),
+    JwtModule.register({
+      secret: process.env.JWT_SECRET || 'dev_secret',   // use env in prod
+      signOptions: { expiresIn: '1h' },
+    }),
+  ],
+  controllers: [AuthController],
+  providers: [JwtStrategy],
+  exports: [PassportModule, JwtModule],
+})
+export class AuthModule {}
+
+
+
+🔐 Authentication (JWT + Passport)
+@Module({
+  imports: [
+    PassportModule.register({ defaultStrategy: 'jwt' }),
+    JwtModule.register({
+      secret: process.env.JWT_SECRET || 'dev_secret',   // use env in prod
+      signOptions: { expiresIn: '1h' },
+    }),
+  ],
+  controllers: [AuthController],
+  providers: [JwtStrategy],
+  exports: [PassportModule, JwtModule],
+})
+export class AuthModule {}
+
+
+
+🔐 Authentication (JWT + Passport)
+export class JwtStrategy extends PassportStrategy(Strategy) {
+  constructor() {
+    super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      secretOrKey: 'secret',
+    });
+  }
+
+  validate(payload) {
+    return { userId: payload.sub, email: payload.email };
+  }
+}
+
+
+🔐 Authentication (JWT + Passport)
+import { Injectable } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
+
+@Injectable()
+export class JwtAuthGuard extends AuthGuard('jwt') {}
+
+
+// usage
+@Controller('profile')
+export class AuthController {
+  @Get()
+  @UseGuards(JwtAuthGuard)
+  me(@Req() req: any) {
+    // req.user was set by JwtStrategy.validate()
+    return { me: req.user };
+  }
+}
+
+
+🔐 Authentication (JWT + Passport)
+import {
+  CanActivate, ExecutionContext, Injectable, UnauthorizedException,
+} from '@nestjs/common';
+import { JwtService } from '@nestjs/jwt';
+
+@Injectable()
+export class JwtCustomGuard implements CanActivate {
+  constructor(private readonly jwt: JwtService) {}
+
+  async canActivate(ctx: ExecutionContext): Promise<boolean> {
+    const req = ctx.switchToHttp().getRequest();
+    const auth = req.headers['authorization'] as string | undefined;
+
+    if (!auth?.startsWith('Bearer ')) {
+      throw new UnauthorizedException('Missing or invalid Authorization header');
+    }
+
+    try {
+      // Verify token manually
+      const payload = await this.jwt.verifyAsync(token, {
+        secret: process.env.JWT_SECRET || 'dev_secret',
+      });
+
+      // Attach to request (mimicking Passport’s req.user)
+      req.user = { userId: payload.sub, email: payload.email, roles: payload.roles ?? [] };
+
+      return true;
+    } catch {
+      throw new UnauthorizedException('Token invalid or expired');
+    }
+  }
+}
+
+
+🔐 Authentication (JWT + Passport)
+import { Controller, Get, UseGuards, Req } from '@nestjs/common';
+import { JwtCustomGuard } from './jwt-custom.guard';
+import { JwtModule } from '@nestjs/jwt';
+
+@Controller('profile-custom')
+export class ProfileCustomController {
+  @Get()
+  @UseGuards(JwtCustomGuard)
+  whoAmI(@Req() req: any) {
+    return { me: req.user };
+  }
+}
+
+
+💻 Hands-On Quest
+Task:
+Install @nestjs/passport, @nestjs/jwt, passport-jwt.
+Add AuthModule with AuthService and UsersService.
+Implement /auth/login → returns JWT.
+Protect /guilds routes with JWT guard.
+Test with Postman using Authorization: Bearer <token>. (if time permits)
+
+Temple Unlock:
+🔐 Key of Trust obtained — vault secured.
+
+
+
+🛡️ Guards & Interceptors
+Purpose:
+Add advanced control and response manipulation.
+
+Key Topics:
+Guards (CanActivate, ExecutionContext)
+Role-based access
+Interceptors
+Logging, transformation, timing
+Order of execution 
+
+(Client → Middleware → Guards → Pipes → Interceptors → Controllers/Resolvers → Services → Middleware  → Response)
+
+
+“Guards control who enters. Interceptors control what happens next.”
+
+
+
+🛡️ Guards & Interceptors
+// roles.guard.ts
+import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
+@Injectable()
+export class RolesGuard implements CanActivate {
+  canActivate(ctx: ExecutionContext) {
+    return ctx.switchToHttp().getRequest().user?.role === 'admin';
+  }
+}
+
+// logging.interceptor.ts
+import { Injectable, NestInterceptor, ExecutionContext, CallHandler } from '@nestjs/common';
+import { tap } from 'rxjs/operators';
+@Injectable()
+export class LoggingInterceptor implements NestInterceptor {
+  intercept(ctx: ExecutionContext, next: CallHandler) {
+    const t = Date.now(); return next.handle().pipe(tap(() => console.log('Time:', Date.now()-t,'ms')));
+  }
+}
+
+
+💻 Hands-On Quest
+Task:
+Create RolesGuard to restrict admin-only routes.
+Add LoggingInterceptor to log response times.
+Combine with AuthGuard for layered access control.
+Use custom decorator @Roles('admin').
+
+Temple Unlock:
+🛡️ Guardian’s Shield forged — control achieved.
+
+
+⚙️ Middleware
+Purpose:
+Handle logic before a request reaches controllers — logging, auth checks, or data enrichment.
+
+Key Topics:
+Middleware lifecycle and execution order
+Difference from Guards & Interceptors
+Applying middleware globally or per-route
+Built-in vs custom middleware
+Combining middleware with Guards & JWT
+
+💡 Analogy:
+Middleware = Temple Gatekeeper (checks every visitor)
+Guard = Room Sentinel (checks specific chamber access)
+Interceptor = Sage (observes and transforms)
+
+
+
+
+
+⚙️ Middleware
+// logger.middleware.ts
+import { Injectable, NestMiddleware } from '@nestjs/common';
+@Injectable()
+export class LoggerMiddleware implements NestMiddleware {
+  use(req, res, next) { console.log(`[${req.method}] ${req.url}`); next(); }
+}
+
+// app.module.ts
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(LoggerMiddleware).forRoutes('*');
+  }
+}
+
+
+🧱 Hands-On Quest: Middleware
+Task:
+Create a LoggerMiddleware that logs method, URL, and response time.
+Apply it only to /auth and /guilds routes.
+Create an AuthMiddleware that rejects missing Authorization headers.
+Test combined flow:
+Unauthorized request blocked by middleware
+Authorized request hits Guard + Controller
+
+Temple Unlock:
+⚙️ Mechanism of Vigilance — the Temple gains awareness of every visitor.
+
+
+
+⚙️ Background Jobs
+In real-world apps, not all tasks should happen during an HTTP request.
+Background jobs handle long-running or non-critical work asynchronously — such as:
+	•	Sending emails
+	•	Generating reports or invoices
+	•	Processing uploads
+	•	Syncing data with external APIs
+	•	Running scheduled maintenance tasks
+
+In NestJS, we can implement this through:
+	1.	🐂 Bull / BullMQ Queues — persistent, Redis-based job queues
+	2.	⏰ ScheduleModule (Cron Jobs) — periodic jobs (every X seconds/minutes/days)
+	3.	🧵 Worker Threads / Async Services — for compute-intensive tasks
+
+
+🧱 1. Bull / BullMQ Queues (Redis-based Jobs)
+
+🧱 1. Bull / BullMQ Queues (Redis-based Jobs)
+
+🧱 1. Bull / BullMQ Queues (Redis-based Jobs)
+
+⏰ 2. ScheduleModule (Cron Jobs)
+Purpose
+Execute recurring tasks (daily cleanups, reports, cache refreshes) without a queue.Install with npm i @nestjs/schedule
+
+
+
+🧵 3. Worker Threads (CPU-bound Tasks)
+Use when a task is CPU intensive and blocks the Node.js event loop (e.g., image processing, large dataset parsing).
+
+
+🧰 Best Practices for Background Jobs
+🧰 Best Practices for Background Jobs
+Idempotence – Jobs should be safely re-runnable.
+Retries – Use Bull’s attempts and backoff options.
+Monitoring – Expose /metrics or use Bull Board.
+Separation – Run workers as separate Nest apps (avoid blocking API).
+Graceful Shutdown – Close connections in onApplicationShutdown.
+Prioritization – Use job priorities in queue definitions.
+Security – Never execute user-supplied code in workers.
+
+
+🧩 Hands-On Quest: Background Jobs
+Goal:
+Create an emails queue using Bull.
+Add an endpoint /guilds/notify that enqueues a notification with a given email.
+Create a EmailProcessor that logs "Temple notification sent to guild X".
+Add a cron job that cleans up expired guilds every minute. (we created guilds in persistence chamber)
+
+Temple Unlock:
+⚙️ Engines of the Temple activated — your workers now serve in silence.
+
+
+🧠 Recap
+Today You Learned:
+Database persistence (TypeORM vs MikroORM)
+GraphQL setup and resolvers
+JWT Authentication with Passport
+Middleware & request pre-processing 
+Guards & Interceptors for route protection and transformation
+Background working Jobs/ Queues
+
+Artifacts Earned:
+🧱 Bricks of Persistence
+🔮 Orb of Queries
+🔐 Key of Trust
+⚙️ Mechanism of Vigilance 
+🛡️ Guardian’s Shield
+
+“The Temple now guards itself — alert, aware, and strong.”
+
+
+Day 3
+
+🏯 The Living Temple
+Theme:
+📡 Giving the Temple Life, Voice, and Vision
+
+Focus Areas:
+WebSockets (real-time updates)
+Microservices (asynchronous communication)
+Observability (health, metrics, logs)
+Dockerization & Final Deployment
+Golden Module Celebration 🎉
+
+End of Day Goal:
+A running distributed NestJS system that communicates in real-time, logs its heartbeat, and shines as the final Golden Module.
+
+📅 Agenda
+ 
+Time
+Module
+Concept
+Format
+10:00 – 10:30
+Recap
+Review Day 2 + Setup
+Discussion
+10:30 – 11:00
+Chamber 9
+📡 WebSockets
+Lecture + Hands-on
+11:00 – 12:00
+Chamber 10
+⚙️ Microservices
+Lecture + Hands-on
+12:00 – 13:30
+—
+Lunch Break
+🍱
+13:30 – 14:30
+Chamber 11
+👁️ Observability
+Lecture + Hands-on
+14:30 – 15:30
+Chamber 12
+🐳 Docker & Deployment
+Lecture + Setup
+15:30 – 16:00
+—
+Golden Module Ceremony
+Celebration 🎇
+16:00 - 16:30
+—
+Closing remarks + feedback + discussion
+Casual
+
+📡 WebSockets
+Purpose:
+Allow the temple to speak in real time — connect chambers instantly.
+
+Key Topics:
+@WebSocketGateway() and Socket.IO
+Events (@SubscribeMessage())
+Broadcasting to clients
+Integrating with Auth Guards
+
+Analogy:
+“Controllers speak once. Gateways whisper continuously.”
+
+
+💻 Demo
+Gateway example:
+@WebSocketGateway({ cors: true })
+export class TempleGateway {
+  @WebSocketServer() 
+   server: Server;
+
+  @SubscribeMessage('questCompleted')
+  onQuestCompleted(client: Socket, data: any) {
+    this.server.emit('templeUpdate', { message: 'Temple glows brighter!' });
+  }
+}
+
+
+Client Example (Browser):
+
+const socket = io('http://localhost:3000');
+socket.on('templeUpdate', (msg) => console.log(msg));
+
+
+
+
+📡 WebSockets
+Hands-On Quest:
+Implement TempleGateway.
+Broadcast events when a quest is completed.
+Update console with Temple progress.
+
+Temple Unlock:
+📡 Beacon of Real-Time activated — voices echo across chambers.
+
+
+
+
+⚙️ Microservices
+Purpose:
+Connect distributed temple services through messages instead of HTTP.
+
+Key Topics:
+Message-based communication
+ClientProxy and @MessagePattern()
+Transport layers (TCP, Redis, NATS)
+Worker services & background tasks
+Integration with event-driven flows
+
+
+⚙️ Microservices
+Temple Worker Example:
+
+// temple.worker.ts
+@MessagePattern('temple.event')
+handleTempleEvent(data: any) {
+  console.log('Temple Worker received:', data);
+}
+
+Main API:
+
+// temple.gateway.ts
+constructor(@Inject('TEMPLE_SERVICE') private client: ClientProxy) {}
+
+emitTempleEvent() {
+  this.client.emit('temple.event', { type: 'GLOW', time: new Date() });
+}
+
+
+⚙️ Microservices
+Hands-On Quest:
+Create a second Nest app (worker).
+Connect via TCP transport.
+Emit events from API → process in worker.
+
+Temple Unlock:
+⚙️ Cog of Harmony spins — the temple communicates across realms.
+
+
+
+
+🧠 Event Emitter
+Purpose:
+Enable in-app async communication via events — no HTTP, no direct dependency.  Install with npm i @nestjs/event-emitter
+
+Analogy
+“Whispers echo through the temple halls — the chambers now speak to one another.”
+
+🧠 Event Emitter
+// app.module.ts
+import { EventEmitterModule } from '@nestjs/event-emitter';
+@Module({ imports: [EventEmitterModule.forRoot()] })
+export class AppModule {}
+
+// guilds.service.ts
+this.eventEmitter.emit('guild.created', { name: 'Ruby Rangers' });
+
+// guilds.listener.ts
+@OnEvent('guild.created')
+handleGuildCreated(payload: any) {
+  console.log('Temple Event:', payload.name);
+}
+
+💡 Hands-On Quest: Event Emitter
+Task:
+Emit quest.completed event from controller.
+Handle it in a listener that logs the quest name.
+Chain events: quest.completed → emits temple.glow.
+
+Temple Unlock:
+🔔 Echoes of the Temple — asynchronous wisdom shared.
+
+
+
+🧪 Testing in NestJS
+Purpose:
+Validate each temple chamber’s strength — test controllers, services, and modules.
+
+Setup:
+npm i -D @nestjs/testing jest @types/jest ts-jest
+npx jest --init
+
+
+
+
+
+🧪 Testing in NestJS
+E2E Test Example
+describe('GuildsController (e2e)', () => {
+  it('/GET guilds', () => {
+    return request(app.getHttpServer())
+      .get('/guilds')
+      .expect(200);
+  });
+});
+
+
+
+
+
+🧪 Testing in NestJS
+Unit Test Example
+
+describe('GuildsService', () => {
+  let service: GuildsService;
+
+  beforeEach(async () => {
+    const module = await Test.createTestingModule({
+      providers: [GuildsService],
+    }).compile();
+
+    service = module.get(GuildsService);
+  });
+
+  it('should create a guild', () => {
+    const guild = service.create('Ruby Rangers');
+    expect(guild.name).toBe('Ruby Rangers');
+  });
+});
+
+
+
+🧩 Hands-On Quest: Testing
+Task:
+Write a unit test for your service.
+Write one E2E test for /guilds.
+Run all tests via npm run test.
+Celebrate with a green ✅.
+
+Temple Unlock:
+🧪 Seal of Stability earned — the temple stands unshaken.
+
+
+👁️ Observability
+Purpose:
+Grant the temple sight — track health, metrics, and readiness.
+
+Key Topics:
+Health endpoints (@nestjs/terminus)
+Metrics with Prometheus (/metrics)
+Centralized logging (PinoLogger / Winston)
+
+
+Tip:
+“A temple that cannot see its own light will fall in darkness — observability prevents blindness.”
+
+
+👁️ Observability
+// app.module.ts
+import { LoggerModule } from 'nestjs-pino';
+
+@Module({
+  imports: [
+    LoggerModule.forRoot({
+      pinoHttp: {
+        transport: { target: 'pino-pretty' }, // readable console logs
+        level: process.env.LOG_LEVEL || 'info',
+      },
+    }),
+  ],
+})
+export class AppModule {}
+
+
+👁️ Observability
+import { PinoLogger } from 'nestjs-pino';
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
+export class GuildsService {
+  constructor(private readonly logger: PinoLogger) {
+    this.logger.setContext(GuildsService.name);
+  }
+
+  create(name: string) {
+    this.logger.info(`Creating guild: ${name}`);
+    return { id: Date.now(), name };
+  }
+}
+
+Output:
+{"time":"2025-10-12T21:00:00Z","level":"info","msg":"Creating guild: Ruby Rangers","context":"GuildsService"}
+
+
+
+💻 Hands-On Quest
+Task:
+Add /health route using TerminusModule.
+Configure Pino logger for logging
+Print request method, URL, and status in logs.
+
+Stretch Challenge:
+Add X-Request-ID middleware and include in logs.
+
+Temple Unlock:
+👁️ Eye of Insight opens — temple becomes self-aware.
+
+
+⚙️ ConfigService
+Purpose:
+Centralize configuration (API keys, DB creds, ports) with @nestjs/config.
+
+Key Benefits:
+Reads .env files automatically
+Supports type-safe config
+Can validate schema via Joi
+Works seamlessly with dynamic modules
+
+Analogy: 
+“ConfigService is the temple’s scroll of secrets — all sacred keys, kept in one safe place.”
+
+
+
+
+⚙️ ConfigService
+// app.module.ts
+import { ConfigModule, ConfigService } from '@nestjs/config';
+@Module({ 
+imports: [ConfigModule.forRoot({ isGlobal: true })] 
+}) 
+export class AppModule {}
+
+// usage in service
+@Injectable()
+export class StartupService {
+  constructor(private cfg: ConfigService) {}
+  port() { console.log('PORT =', this.cfg.get('PORT', 3000)); }
+}
+
+
+💻 Hands-On Quest: ConfigService
+Task:
+Add .env with custom values.
+Inject ConfigService into AppModule and GuildsService.
+Print config values during startup.
+Validate your .env using Joi schema.
+
+Temple Unlock:
+📜 Scroll of Secrets discovered — configuration mastered.
+
+
+
+🐳 Docker & Deployment
+Purpose:
+Contain and preserve the temple for eternity.
+
+Key Topics:
+Dockerfile & .dockerignore
+Environment configuration for containers
+docker-compose for multi-service setup
+Building and running Nest apps in production
+
+Tip:
+“The temple must survive beyond your laptop — Docker is its sarcophagus of immortality.”
+
+
+🏁 The Golden Module
+Final Ceremony:
+All Chambers completed ✅
+Golden Module unlocked ✨
+
+
+
+
+
+
+“The Temple of Modules glows with golden light —
+your journey is complete.” 🌟
+
+Artifacts Earned:
+🏛️ Gate of Structure
+⚔️ Controller’s Blade
+💡 Lantern of Dependency
+🌊 Pipe of Purity
+🧱 Bricks of Persistence
+🔮 Orb of Queries
+🔐 Key of Trust
+⚙️ Mechanism of Vigilance
+🛡️ Guardian’s Shield
+📡 Beacon of Real-Time
+⚙️ Cog of Harmony
+👁️ Eye of Insight
+🐳 Vault of Eternity
+
+
+
+
+
+
+💻 Hands-On Quest
+Create a dockerfile
+FROM node:20
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --only=production
+COPY . .
+CMD ["npm", "run", "start:prod"]
+
+
+   2.	Build & run:
+docker build -t temple-api .
+docker run -p 3000:3000 temple-api
+
+   3. 	Create docker-compose.yml for API + Worker + DB.
+
+Temple Unlock:
+🐳 Vault of Eternity sealed — the temple endures across machines.
+
+
+🎓 Recap
+You are now:
+🏅 Certified Temple Builder of NestJS
+(aka: “Full-Stack Backend Warrior”)
+
+You’ve mastered:
+✅ Modular architecture
+✅ Dependency Injection
+✅ ORMs + GraphQL
+✅ Auth + Middleware
+✅ WebSockets + Microservices
+✅ Observability + Docker
+
+
+
+💬 Reflections & Next Steps
+Reflect:
+What was your favorite Chamber?
+What challenged you the most?
+How will you use NestJS in production?
+
+Next Steps:
+Explore CQRS, Event-Driven Design, or MicroFrontends.
+Build your own module library.
+
+
+“A true Temple Builder never stops learning.”
+
+
+🙏 Thank You
+Over the past 3 days, you’ve built, debugged, and discovered. You’ve mastered the art of modular design, the elegance of dependency injection, and the power of collaboration and curiosity.
+
+As you leave the Temple…
+Keep your code modular 🧱
+Keep your mind curious 💡
+Keep your community strong 🤝
+And always remember: the framework is just a tool — you are the architect. 🏗️
+
+
+Thank you for lighting the Temple with your brilliance ✨ Until the next quest… stay curious, and keep building. ✨
+
+
