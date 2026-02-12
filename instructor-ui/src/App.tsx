@@ -3,13 +3,10 @@ import { motion } from "framer-motion";
 import {
   TrendingUp,
   Users,
-  Signal,
   Search,
   Wifi,
   WifiOff,
-  Filter,
 } from "lucide-react";
-import { LineChart, Line, ResponsiveContainer } from "recharts";
 
 // ---- Types ----
 interface ParticipantData {
@@ -37,7 +34,7 @@ interface Participant {
   isOnline: boolean; // Added this field
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_BASE_URL = "https://91ea-24-40-152-154.ngrok-free.app";
 
 // ---- Badge Helper ----
 const getBadgeEmoji = (badgeId: string): string => {
